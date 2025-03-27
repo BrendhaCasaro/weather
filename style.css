@@ -1,0 +1,93 @@
+/*Occupy all page*/
+.container,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Caladea', serif;
+    font-weight: bold;
+    /* font-style: italic; */
+}
+
+
+/*if there is a chance of rain*/
+#rain {
+    /*backgroud properties*/
+    background: linear-gradient(90deg, rgba(58, 57, 62, 1) 5%, rgba(4, 16, 66, 0.779) 50%, rgba(0, 155, 255, 1) 100%);
+    background-size: cover;
+    background-attachment: fixed;
+
+    /*div properties*/
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+p, h1 {
+    text-align: center;
+    color: white;
+    font-size: 80px;
+}
+
+
+
+/*if it doesn't rain*/
+#sun {
+    background-image: linear-gradient(40deg,
+            hsl(63deg 100% 55%) 0%,
+            hsl(59deg 100% 49%) 4%,
+            hsl(56deg 100% 49%) 8%,
+            hsl(52deg 100% 49%) 13%,
+            hsl(49deg 100% 50%) 17%,
+            hsl(46deg 100% 50%) 21%,
+            hsl(44deg 100% 50%) 25%,
+            hsl(41deg 100% 50%) 29%,
+            hsl(38deg 100% 49%) 33%,
+            hsl(36deg 100% 49%) 37%,
+            hsl(33deg 100% 48%) 42%,
+            hsl(31deg 100% 48%) 46%,
+            hsl(28deg 98% 48%) 50%,
+            hsl(26deg 93% 49%) 54%,
+            hsl(24deg 91% 51%) 58%,
+            hsl(22deg 92% 52%) 63%,
+            hsl(20deg 93% 53%) 67%,
+            hsl(17deg 94% 54%) 71%,
+            hsl(15deg 95% 55%) 75%,
+            hsl(13deg 96% 56%) 79%,
+            hsl(11deg 97% 57%) 83%,
+            hsl(8deg 98% 58%) 87%,
+            hsl(6deg 98% 59%) 92%,
+            hsl(3deg 99% 59%) 96%,
+            hsl(0deg 100% 60%) 100%);
+
+    background-size: cover;
+    background-attachment: fixed;
+
+    /*div properties*/
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#weather {
+    /*Div properties*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 200px;
+    width: 750px;
+
+    /*Glass container effect*/
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
