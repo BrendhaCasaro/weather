@@ -33,18 +33,11 @@ function error(err) {
 }
 
 function renderWeather(weather) {
-    const container = document.querySelector(".current_date");
-
-    // weather.properties.timeseries.forEach(timeseries => {
-    //     for (const [key, value] of Object.entries(timeseries.data.instant)) {
-    //         console.log(key, value)
-    //         const div = document.createElement("div");
-    //         div.innerHTML = `<p><strong>${key}: </strong>${JSON.stringify(value)}</p>`;
-    //         container.appendChild(div);
-    //     }
-    // })
+    let weatherElement = document.querySelector("#weather")
+    weather.properties.timeseries.forEach(timeseries => {
+        console.log(timeseries.data.next_1_hours?.details.precipitation_amount)
+    });
 
 }
 
 navigator.geolocation.getCurrentPosition(success, error, options);
-
